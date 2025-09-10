@@ -32,7 +32,7 @@ Welcome to the Movie Ticket System 🎬
 Available Seats: 50
 You booked 3 tickets successfully!
 Remaining Seats: 47
-
+___________________________________________________________________________________________________________________________________________________________________________
 🏦 Bank Account System
 
 Description:
