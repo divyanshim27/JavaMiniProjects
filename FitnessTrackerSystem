@@ -1,0 +1,56 @@
+public class FitnessTrackerSystem {
+    public static void main(String[] args) {
+        Workout w1 = new Workout();
+        w1.displayWorkout();
+
+        Workout w2 = new Workout("Cycling");
+        w2.displayWorkout();
+
+        Workout w3 = new Workout("Swimming", 45);
+        w3.displayWorkout();
+
+        Workout w4 = new Workout("Running", 60);
+        w4.displayWorkout();
+
+        Workout w5 = new Workout("Yoga", 50);
+        w5.displayWorkout();
+
+        Workout w6 = new Workout("Strength Training", 75);
+        w6.displayWorkout();
+
+        Workout w7 = new Workout("Dancing", 40);
+        w7.displayWorkout();
+    }
+}
+
+class Workout {
+    private String activityName;
+    private int durationInMinutes;
+    private int caloriesBurned;
+
+    public Workout() {
+        this.activityName = "Walking";
+        this.durationInMinutes = 30;
+        this.caloriesBurned = 100;
+    }
+
+    public Workout(String activityName) {
+        this.activityName = activityName;
+        this.durationInMinutes = 30;
+        this.caloriesBurned = this.durationInMinutes * 5;
+    }
+
+    public Workout(String activityName, int durationInMinutes) {
+        this.activityName = activityName;
+        this.durationInMinutes = durationInMinutes;
+        this.caloriesBurned = durationInMinutes * 5;
+    }
+
+    public void displayWorkout() {
+        System.out.println("Workout Summary");
+        System.out.println("Activity       : " + activityName);
+        System.out.println("Duration       : " + durationInMinutes + " minutes");
+        System.out.println("Calories Burned: " + caloriesBurned + " kcal");
+        System.out.println("----------------------------------");
+    }
+}
